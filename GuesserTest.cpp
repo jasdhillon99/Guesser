@@ -34,3 +34,7 @@ TEST(GuessserTest, storing_secret){
 	Guesser mySecret("secret");
 }
 
+TEST(GuesserTest, secret_too_long){
+	Guesser mySecret("secretsecretsecretsecretsecretsecret");
+	ASSERT_EQ("secretsecretsecretsecretsecret", mySecret.m_secret);
+}
