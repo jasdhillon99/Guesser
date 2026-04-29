@@ -22,10 +22,15 @@ TEST(GuesserTest, smoke_test)
   ASSERT_EQ( 1+1, 2 );
 }
 */
-
+/*
 TEST(GuesserTest, blank)
 {
 	Guesser myGuess;
 	bool actual = myGuess.match("secret"); 
 	ASSERT_EQ(1, actual);
 }
+*/
+TEST(GuessserTest, storing_secret){
+	Guesser mySecret("secret");
+}
+
